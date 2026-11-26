@@ -139,7 +139,7 @@ I am interested in opportunities involving:
 
 ## Connect With Me
 
-- [LinkedIn](https://www.linkedin.com/in/ahmed-adamson-a58675450/)
+- [LinkedIn](https://www.linkedin.com/in/ahmed-adamson-13b497314/)
 - [GitHub Profile](https://github.com/AdamsonITLabs)
 - [Explore My Repositories](https://github.com/AdamsonITLabs?tab=repositories)
 
