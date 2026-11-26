@@ -1,186 +1,150 @@
-# Enterprise Identity & Infrastructure Lab
+# Welcome to Adamson IT Labs
 
-## Project Overview
+### IT Support | System Administration | Infrastructure | Cybersecurity
 
-A hands-on enterprise IT infrastructure and cybersecurity lab built using Windows Server 2022, Windows 11 and Microsoft Hyper-V.
+I am an IT professional with hands-on experience in technical support, enterprise infrastructure, identity management, endpoint security and network troubleshooting.
 
-This project simulates a corporate environment with multiple departments, centralized identity management, network services, role-based access control and endpoint security.
+This portfolio showcases my practical IT projects, technical documentation, configuration scripts and security validation.
 
-**Project Status:** Deployed and partially validated.
+---
 
-## Technologies Used
+## About Me
 
-- Windows Server 2022
-- Windows 11
-- Microsoft Hyper-V
-- Active Directory Domain Services
-- DNS and DHCP
-- Group Policy Management
-- PowerShell
-- NTFS and SMB Permissions
-- Microsoft Defender Antivirus
-- Windows Defender Firewall
-- Windows Security Auditing
+- Enterprise IT Support and Troubleshooting
+- Windows Server and System Administration
+- Active Directory and Identity Management
+- Network Infrastructure and Security
+- Microsoft 365 Administration
+- PowerShell Scripting and Automation
+- IT Security and Controls
+- Certified Information Systems Auditor (CISA)
+
+---
+
+## Technical Skills
+
+| Category | Technologies |
+|---|---|
+| Operating Systems | Windows 10, Windows 11, Windows Server 2022, Linux |
+| Identity Management | Active Directory, Microsoft Entra ID, Group Policy |
+| Networking | TCP/IP, DNS, DHCP, VLAN, VPN |
+| Virtualization | Microsoft Hyper-V, VMware |
+| Cloud & Productivity | Microsoft 365, Azure Fundamentals, Exchange, SharePoint, Teams |
+| Security | Windows Defender, Firewall, MFA, RBAC, Security Auditing |
+| Automation | PowerShell |
+| IT Operations | PDQ Deploy, Endpoint Imaging, Ticketing, ITSM |
+| Telecommunications | 3CX PBX, SIP, VoIP |
+| Governance | ITGC, ITAC, NIST CSF, ISO 27001 |
+
+---
+
+## Featured Project
+
+### Enterprise Identity & Infrastructure Lab
+
+**Project Type:** Enterprise Infrastructure and Security
+
+**Environment:** Windows Server 2022, Windows 11 and Microsoft Hyper-V
+
+**Status:** Deployed and Partially Validated
+
+Designed and deployed an isolated enterprise infrastructure environment to demonstrate practical system administration, network management, identity administration and security configuration.
+
+### Project Implementation
+
+- Active Directory Domain Services deployment
+- Domain controller configuration
+- DNS and DHCP administration
+- Organizational unit configuration
+- Security group management
+- Domain user provisioning
+- Windows workstation domain integration
+- Group Policy configuration
+- Password and account lockout policies
+- NTFS and SMB permissions
+- Role-based access control
+- Windows Defender Firewall configuration
+- Endpoint antivirus validation
+- Advanced authentication auditing
+- PowerShell configuration and validation
+
+### Project Documentation
+
+| Resource | Link |
+|---|---|
+| Project Repository | [View Project](https://github.com/AdamsonITLabs/enterprise-identity-lab) |
+| Project Overview | [Read Documentation](https://github.com/AdamsonITLabs/enterprise-identity-lab) |
+| Testing and Validation | [View Testing Report](https://github.com/AdamsonITLabs/enterprise-identity-lab/blob/main/TESTING.md) |
+| Technical Screenshots | [View Evidence](https://github.com/AdamsonITLabs/enterprise-identity-lab/tree/main/screenshots) |
+| Security Documentation | [View Evidence Index](https://github.com/AdamsonITLabs/enterprise-identity-lab/blob/main/screenshots/README.md) |
+
+---
 
 ## Infrastructure Architecture
 
-```mermaid
-graph TD
-    C["CLIENT01 - Windows 11"] --> S["Private Hyper-V Switch"]
-    S --> D["DC01 - Windows Server 2022"]
-    D --> A["Active Directory"]
-    D --> B["DNS"]
-    D --> E["DHCP"]
-    D --> F["Group Policy"]
-    D --> G["Healthcare File Share"]
-    D --> H["Identity and Access Management"]
+```text
+           Enterprise Lab Network
+               192.168.50.0/24
+                      |
+             Virtual Network
+                      |
+          +-----------+-----------+
+          |                       |
+        DC01                   CLIENT01
+  Windows Server 2022          Windows 11
+    192.168.50.10                 DHCP
+          |
+      Active Directory
+      DNS Server
+      DHCP Server
+      Group Policy
+      Security Groups
+      File Permissions
+
+Domain: corp.adamsonlab.test
 ```
 
-## Network Configuration
+---
 
-| Component | Configuration |
-|---|---|
-| Domain | corp.adamsonlab.test |
-| Domain Controller | DC01 |
-| Server IP | 192.168.50.10 |
-| Client | CLIENT01 |
-| Client DHCP IP | 192.168.50.100 |
-| Subnet | 192.168.50.0/24 |
-| DHCP Range | 192.168.50.100 - 192.168.50.200 |
-| DHCP Lease | 8 days |
-| DNS Server | 192.168.50.10 |
-| Virtual Switch | Corp-Lab-Switch |
+## Professional Focus
 
-## Enterprise Organizational Structure
+I am interested in opportunities involving:
 
-The Active Directory environment includes the following organizational units:
+- IT Support Specialist
+- Technical Support Analyst
+- Service Desk Analyst
+- Desktop Support Analyst
+- System Administrator
+- Infrastructure Analyst
+- IT Security Analyst
+- Network Support Specialist
 
-- IT
-- Cybersecurity
-- Healthcare
-- Human Resources
-- Finance
-- Management
-- Workstations
-- Servers
-- Security Groups
-- Service Accounts
+---
 
-## Identity and Access Management
+## Professional Certification
 
-- Created six simulated employee accounts.
-- Created eight global security groups.
-- Organized employee accounts by department.
-- Joined a Windows 11 workstation to the corporate domain.
-- Verified domain user authentication.
-- Implemented role-based access control.
-- Configured departmental file sharing using NTFS and SMB permissions.
+- Certified Information Systems Auditor (CISA)
 
-## Healthcare Access Security
+---
 
-A restricted Healthcare network share was created to demonstrate least privilege and departmental access control.
+## Portfolio Objectives
 
-| Test | Result |
-|---|---|
-| Healthcare employee access | Passed |
-| Authorized file creation | Passed |
-| Unauthorized Finance employee access | Denied as expected |
+- Develop practical enterprise infrastructure solutions.
+- Strengthen system administration and networking skills.
+- Implement identity management and security controls.
+- Document technical configurations and testing results.
+- Demonstrate practical IT troubleshooting and problem-solving skills.
 
-## Network Services
+---
 
-- Installed and configured Active Directory Domain Services.
-- Configured and validated DNS.
-- Installed and authorized a DHCP server.
-- Created an active DHCP scope.
-- Verified automatic IP address assignment.
-- Confirmed active DHCP client leases.
-- Troubleshot network connectivity and firewall restrictions.
+## Connect With Me
 
-## Group Policy and Security Hardening
+- [LinkedIn](https://www.linkedin.com/in/ahmed-adamson-a58675450/)
+- [GitHub Profile](https://github.com/AdamsonITLabs)
+- [Explore My Repositories](https://github.com/AdamsonITLabs?tab=repositories)
 
-Configured domain password policies and a dedicated Enterprise Workstation Security GPO.
+---
 
-| Security Control | Configuration |
-|---|---|
-| Minimum password length | 14 characters |
-| Password complexity | Enabled |
-| Password history | 24 passwords |
-| Minimum password age | 1 day |
-| Account lockout threshold | 5 attempts |
-| Account lockout duration | 15 minutes |
-| Reversible password encryption | Disabled |
-| Automatic screen lock | 10 minutes |
-| Microsoft Defender | Enabled |
-| Real-time protection | Enabled |
-| Behavior monitoring policy | Enabled |
-| Logon auditing | Success and Failure |
-| Logoff auditing | Success |
-| Account lockout auditing | Failure |
-| Special logon auditing | Success |
+### Continuous Learning. Practical Experience. Professional Growth.
 
-## Validation Results
-
-- Active Directory domain and forest verified.
-- DNS diagnostic tests passed.
-- Client-to-server connectivity verified.
-- Domain authentication successful.
-- Authorized and unauthorized file access tested.
-- DHCP address assignment verified.
-- Workstation Group Policy application verified.
-- Domain and Private firewall profiles verified.
-- Defender real-time protection verified.
-- Logon and logoff audit settings verified.
-
-## Remaining Validation
-
-- Actual account lockout behavior.
-- Automatic screen lock behavior.
-- Public firewall profile status.
-- Guest account security.
-- Security event generation and Event Viewer analysis.
-
-## PowerShell Automation
-
-The repository includes starter PowerShell scripts for domain deployment, organizational unit creation and infrastructure validation.
-
-Additional configuration was performed through PowerShell and Windows administrative tools during the lab.
-
-## Project Evidence
-
-Screenshots documenting the infrastructure deployment, configuration and security validation are available below.
-
-[View Project Screenshots](./screenshots/)
-
-[View Testing Documentation](./TESTING.md)
-
-## Skills Demonstrated
-
-- Systems Administration
-- Active Directory Administration
-- Identity and Access Management
-- Network Administration
-- IT Infrastructure
-- Endpoint Security
-- Group Policy Management
-- PowerShell
-- Healthcare IT Access Controls
-- Technical Troubleshooting
-- Security Configuration and Validation
-
-## Future Improvements
-
-- Windows Event Forwarding
-- SIEM Integration
-- Backup and Disaster Recovery
-- Automated User Provisioning
-- Microsoft Entra ID Integration
-
-## Author
-
-Adamson Ahmed
-
-IT Support | Systems Administration | Cloud Infrastructure | Cybersecurity | Healthcare IT
-
-## Disclaimer
-
-This project was developed in an isolated personal lab for educational and professional portfolio purposes. All employee accounts and departmental data are simulated.
+Thank you for visiting my technical portfolio.
