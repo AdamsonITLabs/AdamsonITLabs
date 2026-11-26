@@ -1,137 +1,186 @@
-# Hi, I'm Ahmed Adamson 👋
+# Enterprise Identity & Infrastructure Lab
 
-## IT Infrastructure | Cloud Computing | Cybersecurity | Healthcare IT
+## Project Overview
 
-IT Infrastructure and Systems Administration Professional with over 3 years of experience supporting enterprise technology, healthcare systems, cloud services and business-critical IT operations.
+A hands-on enterprise IT infrastructure and cybersecurity lab built using Windows Server 2022, Windows 11 and Microsoft Hyper-V.
 
-My expertise includes Microsoft cloud technologies, identity and access management, endpoint management, network infrastructure, cybersecurity and IT service management.
+This project simulates a corporate environment with multiple departments, centralized identity management, network services, role-based access control and endpoint security.
 
-I focus on maintaining secure and reliable IT environments, resolving complex technical issues, improving system performance and supporting business continuity.
+**Project Status:** Deployed and partially validated.
 
-## Professional Experience
+## Technologies Used
 
-- IT Support Technician (Internship) | CarePartners | May 2026 - August 2026
-- System Administrator (Contract) | Uplink Communications | January 2025 - December 2025
-- Customer Loyalty Specialist / Technical Support | Marriott International | December 2022 - January 2025
-- Information Technology Support Manager | Opooletech | June 2020 - July 2021
-- Information Technology Specialist | Ovatave Inc. | January 2018 - December 2019
-
-## Technical Expertise
-
-### Cloud Computing & Identity Management
-
-- Microsoft Azure
-- Microsoft Entra ID
-- Microsoft 365 Administration
-- Active Directory
-- Group Policy
-- Identity and Access Management
-- SharePoint Online
-- Microsoft Teams
-
-### Enterprise Infrastructure & Systems Administration
-
-- Windows Server
-- Windows 10/11
-- Linux
-- PowerShell
+- Windows Server 2022
+- Windows 11
+- Microsoft Hyper-V
+- Active Directory Domain Services
 - DNS and DHCP
-- Enterprise Device Deployment
-- PDQ Deploy
-- Microsoft Intune
-- Samsung Knox
-- IT Asset Management
+- Group Policy Management
+- PowerShell
+- NTFS and SMB Permissions
+- Microsoft Defender Antivirus
+- Windows Defender Firewall
+- Windows Security Auditing
 
-### Cybersecurity & Risk Management
+## Infrastructure Architecture
 
-- Vulnerability Assessment
-- Qualys
-- Endpoint Security
-- Security Monitoring
-- Identity and Access Controls
-- Security Incident Management
-- Cybersecurity Compliance
+```mermaid
+graph TD
+    C["CLIENT01 - Windows 11"] --> S["Private Hyper-V Switch"]
+    S --> D["DC01 - Windows Server 2022"]
+    D --> A["Active Directory"]
+    D --> B["DNS"]
+    D --> E["DHCP"]
+    D --> F["Group Policy"]
+    D --> G["Healthcare File Share"]
+    D --> H["Identity and Access Management"]
+```
 
-### Network Infrastructure & Telecommunications
+## Network Configuration
 
-- TCP/IP
-- LAN/WAN
-- VPN
+| Component | Configuration |
+|---|---|
+| Domain | corp.adamsonlab.test |
+| Domain Controller | DC01 |
+| Server IP | 192.168.50.10 |
+| Client | CLIENT01 |
+| Client DHCP IP | 192.168.50.100 |
+| Subnet | 192.168.50.0/24 |
+| DHCP Range | 192.168.50.100 - 192.168.50.200 |
+| DHCP Lease | 8 days |
+| DNS Server | 192.168.50.10 |
+| Virtual Switch | Corp-Lab-Switch |
+
+## Enterprise Organizational Structure
+
+The Active Directory environment includes the following organizational units:
+
+- IT
+- Cybersecurity
+- Healthcare
+- Human Resources
+- Finance
+- Management
+- Workstations
+- Servers
+- Security Groups
+- Service Accounts
+
+## Identity and Access Management
+
+- Created six simulated employee accounts.
+- Created eight global security groups.
+- Organized employee accounts by department.
+- Joined a Windows 11 workstation to the corporate domain.
+- Verified domain user authentication.
+- Implemented role-based access control.
+- Configured departmental file sharing using NTFS and SMB permissions.
+
+## Healthcare Access Security
+
+A restricted Healthcare network share was created to demonstrate least privilege and departmental access control.
+
+| Test | Result |
+|---|---|
+| Healthcare employee access | Passed |
+| Authorized file creation | Passed |
+| Unauthorized Finance employee access | Denied as expected |
+
+## Network Services
+
+- Installed and configured Active Directory Domain Services.
+- Configured and validated DNS.
+- Installed and authorized a DHCP server.
+- Created an active DHCP scope.
+- Verified automatic IP address assignment.
+- Confirmed active DHCP client leases.
+- Troubleshot network connectivity and firewall restrictions.
+
+## Group Policy and Security Hardening
+
+Configured domain password policies and a dedicated Enterprise Workstation Security GPO.
+
+| Security Control | Configuration |
+|---|---|
+| Minimum password length | 14 characters |
+| Password complexity | Enabled |
+| Password history | 24 passwords |
+| Minimum password age | 1 day |
+| Account lockout threshold | 5 attempts |
+| Account lockout duration | 15 minutes |
+| Reversible password encryption | Disabled |
+| Automatic screen lock | 10 minutes |
+| Microsoft Defender | Enabled |
+| Real-time protection | Enabled |
+| Behavior monitoring policy | Enabled |
+| Logon auditing | Success and Failure |
+| Logoff auditing | Success |
+| Account lockout auditing | Failure |
+| Special logon auditing | Success |
+
+## Validation Results
+
+- Active Directory domain and forest verified.
+- DNS diagnostic tests passed.
+- Client-to-server connectivity verified.
+- Domain authentication successful.
+- Authorized and unauthorized file access tested.
+- DHCP address assignment verified.
+- Workstation Group Policy application verified.
+- Domain and Private firewall profiles verified.
+- Defender real-time protection verified.
+- Logon and logoff audit settings verified.
+
+## Remaining Validation
+
+- Actual account lockout behavior.
+- Automatic screen lock behavior.
+- Public firewall profile status.
+- Guest account security.
+- Security event generation and Event Viewer analysis.
+
+## PowerShell Automation
+
+The repository includes starter PowerShell scripts for domain deployment, organizational unit creation and infrastructure validation.
+
+Additional configuration was performed through PowerShell and Windows administrative tools during the lab.
+
+## Project Evidence
+
+Screenshots documenting the infrastructure deployment, configuration and security validation are available below.
+
+[View Project Screenshots](./screenshots/)
+
+[View Testing Documentation](./TESTING.md)
+
+## Skills Demonstrated
+
+- Systems Administration
+- Active Directory Administration
+- Identity and Access Management
 - Network Administration
-- Network Troubleshooting
-- 3CX PBX Administration
-- SIP and VoIP
-- Grandstream and Fanvil IP Phones
+- IT Infrastructure
+- Endpoint Security
+- Group Policy Management
+- PowerShell
+- Healthcare IT Access Controls
+- Technical Troubleshooting
+- Security Configuration and Validation
 
-### Healthcare Information Technology
+## Future Improvements
 
-- Healthcare IT Infrastructure
-- Healthcare Systems Administration
-- Enterprise Endpoint Management
-- Healthcare Device Deployment
-- Mobile Device Management
-- Healthcare IT Asset Management
-- Healthcare Data Protection
+- Windows Event Forwarding
+- SIEM Integration
+- Backup and Disaster Recovery
+- Automated User Provisioning
+- Microsoft Entra ID Integration
 
-### IT Operations & Service Management
+## Author
 
-- Jira Service Management
-- ServiceNow
-- Zendesk
-- Incident Management
-- Technical Documentation
-- Knowledge Base Management
-- Standard Operating Procedures
-- Business Continuity
+Adamson Ahmed
 
-## Education
+IT Support | Systems Administration | Cloud Infrastructure | Cybersecurity | Healthcare IT
 
-- Diploma in Information Technology Administrator (Cloud) | triOS College | 2026
-- Diploma in Information Technology Administrator (Cybersecurity) | triOS College | 2024
-- Computer Science (Study Abroad) | University of Lagos | 2017
+## Disclaimer
 
-## Professional Certifications
-
-- Microsoft Certified: Azure Fundamentals (AZ-900)
-- Google IT Support Professional Certificate
-- Atlassian Jira Fundamentals
-- 3CX Certified Engineer
-
-## Enterprise Technical Projects
-
-| Project | Technical Focus | Status |
-|---|---|---|
-| Enterprise Identity Lab | Active Directory, GPO, PowerShell, DNS, DHCP | Planned |
-| Azure Cloud Infrastructure | Cloud Architecture, Azure, RBAC, Networking | Planned |
-| Cybersecurity Operations Lab | SIEM, Threat Detection, Incident Response | Planned |
-| Healthcare Endpoint Management | Intune, PDQ Deploy, Device Security | Planned |
-| Healthcare IT Service Desk | ITSM, Incident Management, Service Operations | Planned |
-| Microsoft 365 Administration | Entra ID, Exchange, SharePoint, MFA | Planned |
-| Enterprise Network & VoIP | Network Infrastructure, SIP, 3CX | Planned |
-| Healthcare Disaster Recovery | Backup, Recovery, Infrastructure Security | Planned |
-
-## Project Documentation
-
-My technical portfolio will demonstrate:
-
-- Enterprise infrastructure configuration
-- Cloud architecture and administration
-- Cybersecurity monitoring and incident investigation
-- Infrastructure automation
-- Identity and access management
-- Healthcare technology operations
-- Technical architecture diagrams
-- System testing and validation
-- Disaster recovery procedures
-
-All healthcare labs will use fictional data within controlled environments.
-
-## Contact
-
-- Location: London, Ontario, Canada
-- Email: AhmedAdamson285@gmail.com
-- GitHub: [AdamsonITLabs](https://github.com/AdamsonITLabs)
-
----
-
-Building secure, scalable and reliable enterprise IT infrastructure.
+This project was developed in an isolated personal lab for educational and professional portfolio purposes. All employee accounts and departmental data are simulated.
